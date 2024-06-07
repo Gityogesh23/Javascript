@@ -7,8 +7,11 @@ const family={
 village_name:'satod',
 code:123,
 state:'maharashtra',
-country:'India'
+country:'India',
+religion:'indian',
+nationality:'indian'
 };
+
 
 console.log(family.village_name);
 
