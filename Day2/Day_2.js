@@ -13,4 +13,8 @@ console.log("a =",a);
 console.log("post increment val of a =", a++ );//post increment value of 41 remain,becauseit changes on next line.observe
 console.log("after post increment on next line value of a =", a);
 
-
+a-=5;
+console.log(" value of a =a-5 =>", a);//36
+a**=4;
+console.log("value of a with exponantila opr= ", a);//1679616
+console.log("40==20=>", a==b);//false
