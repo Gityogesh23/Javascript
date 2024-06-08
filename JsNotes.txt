@@ -1,0 +1,48 @@
+
+# Variable in Javascript:
+1) Javascript is dynamically typed checked.
+2)case sensitive.i.e A and a is different.
+3)varibles name should allows=> _(Underscore),letter ,digits or $ ,not with spaces. 
+4)Allow to start with only $,digits or _(Underscore)
+5)reserved name not be an variable.
+
+eg=>/*
+variable rule=>this is not works with variable name b'z its a reserved keword in js.
+console="mera badla";
+console.log("console");//error on browser=>console.log is not a function.
+
+2)Console= "mera badla"; perfectly valid case sensitive
+
+console.log(Console);
+*/
+
+##let,const and var==>
+NOTE=>we always go with let/const.
+#let=> variable cannot be redeclared or but can be upadated.
+#const =>Variable cannot be redeclared or updated .A block Scope Variable.
+
+#var=>variable which can be redeclared & updated.It has a global scope.
+
+============================================================================
+## DATATYPES IN JAVASCRIPT:##
+==>Number,String,Boolean,Undefined,BigInt,Null,Symbol
+
+object creation in js=>should be in key:value pair
+eg .student{
+fullName:"yogesh patil",
+age:28,
+cgpa:8.5,
+city:"navi mumbai"
+};
+
+to access the objects key =>eg. 1)either by this way =>console.log(student.age )
+2)or by this way=>console.log(student["age"]);
+
+3)Note=>we know we cn update let but not const variable in js.
+but we can update object which we declared as const ,it's rule why? we see it later.and 
+now just note in memory.but we need to update whole object (change it's memory)not just an single key.
+we can see it further.in object related chapter.
+
+string="abcd"+1; //strings in js are unique things they are appends if we use + sign not add
+//console.log(string)=>abcd1
+
