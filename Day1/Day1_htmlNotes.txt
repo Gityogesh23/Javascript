@@ -1,3 +1,5 @@
+DAY_1)
+
 HTML- stands  for hyperText markup language.
 
 A simple html document:=>
@@ -250,4 +252,5 @@ The lang attribute of the <html> tag declares the language of the Web page
 The title attribute defines some extra information about an element
 
 ===============$$$$$$$$$$$$$$$$$$$===============================================
+    
 

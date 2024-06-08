@@ -41,3 +41,4 @@ console.log("i love javascript");
 let length=10;
 const breadth=30;
 console.log("area of square= "+length*breadth);
+
