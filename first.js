@@ -14,4 +14,4 @@ nationality:'indian'
 
 
 console.log(family.village_name);
-
+console.log(School['nationality']);
