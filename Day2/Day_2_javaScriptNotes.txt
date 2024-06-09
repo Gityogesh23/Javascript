@@ -53,3 +53,23 @@ if (age<18){
 condition ? true =>o/p :false =>o/p
 ===================================================================================
 ### MDN DOCS:must read  ##
+====================================================================================
+#
+Using prompt() is a simple and straightforward way to accept input from users in JavaScript, especially for quick and small-scale applications or for testing purposes. However, for more robust, user-friendly, and flexible input handling, it's often better to use HTML form elements and handle input with JavaScript.
+
+Using prompt()
+prompt() displays a dialog box that prompts the user for input. It returns the input value as a string or null if the user cancels the dialog.
+
+e.g
+let userInput = prompt("Please enter your name:");
+if (userInput !== null) {
+    console.log("Hello, " + userInput + "!");
+} else {
+    console.log("User canceled the prompt.");
+}
+
+Limitations of prompt()
+User Experience: prompt() creates a blocking dialog that can be disruptive to the user experience.
+Styling and Customization: prompt() dialogs cannot be styled or customized.
+Validation: It is harder to validate user input within prompt().
+(HTML FORMS ARE BETTER SOL .SEE IN HTML NOTES .)
