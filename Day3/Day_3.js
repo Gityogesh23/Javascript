@@ -2,9 +2,9 @@
 // for(let count=0;count<=10;count++){
 //     console.log("javascript,love you")
 // }
-//to cal sum of 1 to 5
-let sum=0;
-for(let i=1;i<=5;i++){
+//to cal sum of 1 to 3
+let  sum=0;
+for(let i=1;i<=3;i++){
 sum=sum+i;
 console.log("sum= "+sum);
 }
@@ -27,7 +27,27 @@ do{
 }while(j1<=2);
 
 //for-of
-let string="patil";
-for(let i of string){
-console.log(i);
+let str="patil";//directly iterate string
+//iterator->character
+for(let i of str){
+console.log("i=",i);
+}
+//cal length of string
+let size=0;
+for(let val of str){
+    console.log("value = ",val);
+    size++;
+}
+console.log("string size =",size);
+
+//for-in
+let student={
+    fname:"yogesh patil",
+    age:29,
+    cgpa:8.5,
+    isPass:true
+
+};
+for (let key in student){
+    console.log("key=", key, " value= ",student[key]);
 }
