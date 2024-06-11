@@ -1,1 +1,4 @@
 Chapter 4 -ARRAY :
+=>mutable alike Strings in js
+=>modifiable
+=>internally objects in js=>e,g.>typeof(arr)=>object
