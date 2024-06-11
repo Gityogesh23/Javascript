@@ -2,3 +2,185 @@ Chapter 4 -ARRAY :
 =>mutable alike Strings in js
 =>modifiable
 =>internally objects in js=>e,g.>typeof(arr)=>object
+
+//Arrays in jsArray Methods:
+1)Array length:he length property returns the length (size) of an array.
+The length property provides an easy way to append a new element to an array:
+e.g.const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Kiwi";
+
+
+2)Array toString():The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+3)Array at():ES2022 added this method.(since 2016 js versions are released by year name .ES6 was come in 2015 or ECMA2015).
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.at(2);
+
+#The at() method returns an indexed element from an array.
+
+The at() method returns the same as [].
+
+The at() method is supported in all modern browsers since March 2022:
+
+NOTE:Many languages allows negative bracket indexing like [-1] to access elements from the end of an object / array / string.
+
+This is not possible in JavaScript, because [] is used for accessing both arrays and objects. obj[-1] refers to the value of key -1, not to the last property of the object.
+
+The at() method was introduced in ES2022 to solve this problem.
+##String at();method also added in ES2022:
+const name = "W3Schools";
+let letter = name.at(2);
+
+4)Array join():The join() method also joins all array elements into a string.
+
+It behaves just like toString(), but in addition you can specify the separator.
+e.g.const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+result:Banana * Orange * Apple * Mango
+
+5)Array pop():
+6)Array push()
+7)Array shift():The shift() method returns the value that was "shifted out
+e.g:const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.shift();
+
+8)Array unshift():The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+e,g:const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");.
+
+#The unshift() method returns the new array length
+e.g:const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");
+
+9)Array delete():
+Warning !
+Using delete() leaves undefined holes in the array.
+
+Use pop() or shift() instead.
+e.g:const fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];
+
+10)Array concat():The concat() method creates a new array by merging (concatenating) existing arrays:
+eg.const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+
+# NOTE:The concat() method does not change the existing arrays. It always returns a new array.
+
+The concat() method can take any number of array arguments.
+
+#The concat() method can also take strings as arguments:
+eg.const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myChildren = arr1.concat(arr2, arr3);
+
+11)Array copyWithin():The copyWithin() method copies array elements to another position in an array:
+eg.Copy to index 2, all elements from index 0:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.copyWithin(2, 0);
+
+NOTE:The copyWithin() method overwrites the existing values.
+
+The copyWithin() method does not add items to the array.
+
+The copyWithin() method does not change the length of the array.
+
+
+12)Array flat():Flattening an array is the process of reducing the dimensionality of an array.
+
+Flattening is useful when you want to convert a multi-dimensional array into a one-dimensional array.
+
+JavaScript Array flat():
+ES2019 Introduced the Array flat() method.
+
+The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+eg.const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+
+13)Array splice()::The splice() method adds new items to an array.
+
+The slice() method slices out a piece of an array.
+
+JavaScript Array splice()
+The splice() method can be used to add new items to an array:
+
+Example:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+The first parameter (2) defines the position where new elements should be added (spliced in).
+
+The second parameter (0) defines how many elements should be removed.
+
+The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+
+The splice() method returns an array with the deleted items:
+
+Example
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 2, "Lemon", "Kiwi");
+
+
+Using splice() to Remove Elements
+With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array:
+
+Example:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);
+The first parameter (0) defines the position where new elements should be added (spliced in).
+
+The second parameter (1) defines how many elements should be removed.
+
+The rest of the parameters are omitted. No new elements will be added.
+
+14)Array toSpliced():JavaScript Array toSpliced()
+ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array.
+
+The difference between the new toSpliced() method and the old splice() method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array.
+
+Example
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(0, 1);
+
+15)Array slice():The slice() method slices out a piece of an array into a new array:
+
+Example
+Slice out a part of an array starting from array element 1 ("Orange"):
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
+The slice() method creates a new array.
+
+The slice() method does not remove any elements from the source array.
+
+Example
+Slice out a part of an array starting from array element 3 ("Apple"):
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(3);
+
+The method then selects elements from the start argument, and up to (but not including) the end argument.
+
+Example
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);
+If the end argument is omitted, like in the first examples, the slice() method slices out the rest of the array.
+
+Example
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(2);
+Automatic toString()
+JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
+
+This is always the case when you try to output an array.
+
+These two examples will produce the same result:
+
+Example
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+All JavaScript objects have a toString() method.
