@@ -28,7 +28,22 @@ console.log(heroes[j]);
 console.log(city.toUpperCase());
 
  }
+ //push(),Pop()=>deletes from end 
+ //toString():present in all js objects.
+let arr=["potato","tomato","brinjal","lichi"]; 
+arr.push("chips","burger");
+console.log(arr.length);
+console.log(arr);
+let deletedItem=arr.pop();//deletes from end or from last index
+console.log(arr);
+console.log("deleted ",deletedItem);
 
- 
+//toString()=>conside same eg.=>method will return new array and coverts values into string 
+
+console.log(arr.toString());
+let mark=[10,20,30,40];
+console.log(mark.toString());
+
+
 
 
