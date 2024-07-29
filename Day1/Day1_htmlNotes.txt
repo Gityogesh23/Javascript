@@ -1,0 +1,256 @@
+DAY_1)
+
+HTML- stands  for hyperText markup language.
+
+A simple html document:=>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script> </script>
+</html>
+
+Meaning =>
+~ The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+~ The <html> element is the root element of an HTML page
+~ The <head> element contains meta information about the HTML page
+~ The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+~ The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+~ The <h1> element defines a large heading.
+~ The <p> element defines a paragraph.
+
+# HTML Documents:
+All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+
+The HTML document itself begins with <html> and ends with </html>.
+
+The visible part of the HTML document is between <body> and </body>.
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+The <!DOCTYPE> Dec
+============================================================================
+## The <!DOCTYPE> Declaration
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any HTML tags).
+
+The <!DOCTYPE> declaration is not case sensitive.
+
+The <!DOCTYPE> declaration for HTML5 is:
+
+<!DOCTYPE html>
+HTML Headings
+HTML headings are defined with the <h1> to <h6> tags.
+=====================================================================================
+
+# HTML Links
+  HTML links are defined with the <a> tag:
+
+Example:
+
+<a href="https://www.w3schools.com">This is a link</a>
+
+The link's destination is specified in the href attribute. 
+
+Attributes are used to provide additional information about HTML elements.
+===========================================================================
+
+##  HTML Images:
+
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+
+Example
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+================================================================================
+## Nested HTML Elements=>
+
+HTML elements can be nested (this means that elements can contain other elements).
+
+All HTML documents consist of nested HTML elements.
+
+The following example contains four HTML elements (<html>, <body>, <h1> and <p>):
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+Example Explained
+The <html> element is the root element and it defines the whole HTML document.
+
+It has a start tag <html> and an end tag </html>.
+
+Then, inside the <html> element there is a <body> element:
+
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+The <body> element defines the document's body.
+
+It has a start tag <body> and an end tag </body>.
+
+Then, inside the <body> element there are two other elements: <h1> and <p>:
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+The <h1> element defines a heading.
+
+It has a start tag <h1> and an end tag </h1>:
+
+<h1>My First Heading</h1>
+The <p> element defines a paragraph.
+
+It has a start tag <p> and an end tag </p>:
+
+<p>My first paragraph.</p>
+
+Never Skip the End Tag.
+
+##Description/meaning  of html web page elements: 
+<html>	===>Defines the root of an HTML document.
+<body>==>	Defines the document's body.
+<h1> to <h6>	==>Defines HTML headings.
+====================================================================================
+##     HTML Attributes:  ##
+
+All HTML elements can have attributes.
+Attributes provide additional information about elements.
+Attributes are always specified in the start tag.
+Attributes usually come in name/value pairs like: name="value".
+
+1) The href Attribute:
+
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+Example
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+2)The src Attribute:
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:
+
+Example
+<img src="img_girl.jpg">
+
+3) The style Attribute:
+
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+
+Example:
+<p style="color:red;">This is a red paragraph.</p>
+
+4) The lang Attribute:
+
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+
+The following example specifies English as the language:
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+
+Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.
+
+## The following example specifies English as the language and United States as the country:
+
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+...
+</body>
+</html>
+
+4)The title Attribute
+The title attribute defines some extra information about an element.
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+Example
+<p title="I'm a tooltip">This is a paragraph.</p>
+=============================================================================
+##  Suggest: Always Use Lowercase Attributes
+
+The HTML standard does not require lowercase attribute names.
+
+The title attribute (and all other attributes) can be written with uppercase or lowercase like title or TITLE.
+
+However, W3C recommends lowercase attributes in HTML, and demands lowercase attributes for stricter document types like XHTML.
+
+At W3Schools we always use lowercase attribute names.
+
+===================================================================================
+## NOTE==> We Suggest: Always Quote Attribute Values.
+
+The HTML standard does not require quotes around attribute values.
+
+However, W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.
+
+## Good:==>
+
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+## Bad:==>
+
+<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
+## Sometimes you have to use quotes. This example will not display the title attribute correctly, because it contains a space:
+
+# Example:
+
+<p title=About W3Schools>
+ At W3Schools we always use quotes around attribute values.
+
+Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
+
+<p title='John "ShotGun" Nelson'>
+Or vice versa:
+
+<p title="John 'ShotGun' Nelson">
+
+=============================$$$$$$$$$$$$======================
+@@ CHAPTER SUMMARY==>
+
+All HTML elements can have attributes
+The href attribute of <a> specifies the URL of the page the link goes to
+The src attribute of <img> specifies the path to the image to be displayed
+The width and height attributes of <img> provide size information for images
+The alt attribute of <img> provides an alternate text for an image
+The style attribute is used to add styles to an element, such as color, font, size, and more
+The lang attribute of the <html> tag declares the language of the Web page
+The title attribute defines some extra information about an element
+
+===============$$$$$$$$$$$$$$$$$$$===============================================
+    
+

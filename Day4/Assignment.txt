@@ -1,0 +1,44 @@
+/*//my sol_1:
+For a given array with marks of students =>[85,98,89,76,60]
+find the marks of entire class.
+let marks1=[85,97,44,37,76,60];
+ let sum=0;
+ for(i=0;i<marks.length;i++){
+    sum=sum+marks1[i];
+    
+ }
+ console.log(sum);
+let len=marks1.length;
+console.log(len);
+
+let average_of_marks1=sum/len;
+console.log("Average of marks= ",average_of_marks1);
+
+
+my sol_2:
+let marks1=[85,97,44,37,76,60];
+ let sum=0;
+ for(let val of marks){
+   sum+=val;
+    
+ }
+ let avg=sum/marks1.length;
+ console.log(`avg marks of class= ${avg}`);
+ 
+*/
+
+/*
+#For a given array with prices of 5 items->[250,645,300,900,50]
+all items have ann offer of 10% OFF on them,the array 
+to store final price after applying offer.
+
+sol=>
+let items=[250,645,300,900,50];
+for(let i=0;i<items.length;i++){
+     let offer=items[i]/10;
+  items[i] -=offer;
+ 
+}
+console.log(items);
+
+*/

@@ -1,0 +1,75 @@
+Day_2) OPERATORS AND CONDITIONAL STATEMENTS.
+ ## Comments: 
+  -Single line and multi-line =>//
+  -Multi-Line comments =>/* */
+========================================================================
+
+# Operators in js=>are =,+=,-=,*=,%=,**=
+e.g 1)a+=1;=>a=a+1;similarly with other 
+2)a**=4;
+
+ #Comparison Operators=>
+ 1)Equal to ==
+ 2)Equal to & type ===
+ 3)not Equal to !=
+ 4)Not equal to & Type !==
+5)> 6)< 7)<= 8)>=
+#Logical Operators=>
+1)Logical AND &&
+2)Logical OR ||
+3)Logical !
+=========================================================================
+#CONDITIONAL STATEMENTS=>
+1)if statement:
+//e.g.
+let color;
+if(mode==="Dark-mode"){
+  color="black;
+}
+
+2)i-else statement
+e.g
+let mode="dark";
+let color;
+if(mode==="dark"){
+    color="black";
+}else{
+    color="white"
+}
+console.log(color);
+
+3)else-if statements:
+e.g.
+age=30;
+if (age<18){
+    console.log("junior");
+}else if(age>60){
+    console.log("senior");
+}else{
+    console.log("adult"); 
+}
+
+#Ternary Operator:
+condition ? true =>o/p :false =>o/p
+===================================================================================
+### MDN DOCS:must read  ##
+====================================================================================
+#
+Using prompt() is a simple and straightforward way to accept input from users in JavaScript, especially for quick and small-scale applications or for testing purposes. However, for more robust, user-friendly, and flexible input handling, it's often better to use HTML form elements and handle input with JavaScript.
+
+Using prompt()
+prompt() displays a dialog box that prompts the user for input. It returns the input value as a string or null if the user cancels the dialog.
+
+e.g
+let userInput = prompt("Please enter your name:");
+if (userInput !== null) {
+    console.log("Hello, " + userInput + "!");
+} else {
+    console.log("User canceled the prompt.");
+}
+
+Limitations of prompt()
+User Experience: prompt() creates a blocking dialog that can be disruptive to the user experience.
+Styling and Customization: prompt() dialogs cannot be styled or customized.
+Validation: It is harder to validate user input within prompt().
+(HTML FORMS ARE BETTER SOL .SEE IN HTML NOTES .)

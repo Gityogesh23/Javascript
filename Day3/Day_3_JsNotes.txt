@@ -1,0 +1,53 @@
+#Day3#
+#Loops in js:
+1)for Loop=>eg.(initialization;condition;inc/dec);
+e.g(let i=1;i<=5;i++){
+    console.log("hi javascript");
+}
+2)infinite loop =>never ever run and always 
+be aware of it,to never right such loop.
+write loop very carefully.
+
+3)While loop=>
+# while(condition)
+4)do-while loop=>must runs at least ones.
+do{
+    //to do
+}while(condition); ==>checked at start
+
+5)for-of loop
+6)for-in loop
+
+//prompt() will always returns string.<==note that.
+
+## Strings in javascript=>
+## Note: in js Strings are immutable.
+#create Stringg:==>let str="appa saheb";
+#String Length:==>str.Length
+#String Indices:
+str[0],str[1],str[2]
+
+//Template literals in js
+=>A way to have empbedded expressions in Strings.
+e,g, `this is template literal`
+
+#delimited by ``(backTick)
+#String Interpolation:
+=>To create String by doing substitution of placeholders.
+e.g. `string text ${expression}string text`
+
+#escape characters=>\n,\t etc
+## Its legth is calculated as a single character only.
+
+##String methods in javascript=>
+these are built-infunctions to manupulating to string.
+1)str.toUpperCase()
+2)str.toLowerCase()
+3)str.trim()//removes whitespaces befoe first character and after last character.
+
+#original string is not changes b'z strings are immutable in js.
+4)str.slice(start,end?)//returns part of string
+5)str1.concat(str2)//joins str2 with str1
+6)str.replace(searchVal,newVal)
+7)str.charAt(idx)
+
